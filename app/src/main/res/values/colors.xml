@@ -3,4 +3,13 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="colorText">#676a6c</color>
+    <color name="table_bg">#dddddd</color>
+    <color name="table_selected_color">#f8ac59</color>
+    <color name="colorTableViewSelect">#E0FFFF</color>
+    <color name="colorTableSep">#dddddd</color>
+    <color name="table_header">#f5f5f4</color>
+    <color name="colorWhite">#FFFFFF</color>
+
 </resources>

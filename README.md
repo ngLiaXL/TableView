@@ -1,23 +1,27 @@
 # TableView
 TableView for Android
 
-横向纵向滚动的ListView
-使用非常简单
-1、布局文件增加TableView
+横向纵向滚动的ListView使用非常简单
 
+## 1、布局文件增加TableView
 
-
-  <com.ldroid.tableview.TableView
+···
+<com.ldroid.tableview.TableView
         android:id="@+id/tableView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+···
+
         
         
         
         
    
-2、自定义ViewModel继承TableViewModel重写如下两个方法
-        @Override
+## 2、自定义ViewModel继承TableViewModel重写如下两个方法
+
+
+···
+ @Override
         public List<ColumnHeader> getColumnHeaderList() {
             if (mColumnHeaderList == null) {
                 mColumnHeaderList = new ArrayList<ColumnHeader>() {
@@ -39,7 +43,6 @@ TableView for Android
             return mColumnHeaderList;
         }
 
-
         @Override
         public List<Cell> convert(final Goods goods) {
             resetIndex();
@@ -60,8 +63,11 @@ TableView for Android
                 }
             };
         }
-        
-        
-        
- 3、可自定义每一个cell宽度
- new ColumnHeader("0", "行号", 50)
+
+···
+
+
+## 3、可自定义每一个cell宽度
+···
+new ColumnHeader("0", "行号", 50)
+···

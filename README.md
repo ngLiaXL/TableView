@@ -71,3 +71,18 @@ TableView for Android
 ~~~
 new ColumnHeader("0", "行号", 50)
 ~~~
+
+## 4、添加数据
+~~~
+        tableView = findViewById(R.id.tableView);
+        tableView.setTableViewModel(new GoodsModel());
+
+
+        tableView.setCellList(new ArrayList<Goods>() {
+            {
+                for (int i = 0; i < 20; i++) {
+                    add(new Goods("测试商品" + (i + 1), "69" + new Random().nextInt(100000), "个", "12.56", "1", "中", "白色", "15", "无"));
+                }
+            }
+        });
+~~~

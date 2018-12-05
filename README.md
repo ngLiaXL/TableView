@@ -5,12 +5,12 @@ TableView for Android
 
 ## 1、布局文件增加TableView
 
-···
+~~~
 <com.ldroid.tableview.TableView
         android:id="@+id/tableView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-···
+~~~
 
         
         
@@ -20,7 +20,7 @@ TableView for Android
 ## 2、自定义ViewModel继承TableViewModel重写如下两个方法
 
 
-···
+~~~
  @Override
         public List<ColumnHeader> getColumnHeaderList() {
             if (mColumnHeaderList == null) {
@@ -64,10 +64,10 @@ TableView for Android
             };
         }
 
-···
+~~~
 
 
 ## 3、可自定义每一个cell宽度
-···
+~~~
 new ColumnHeader("0", "行号", 50)
-···
+~~~

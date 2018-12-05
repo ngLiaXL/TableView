@@ -3,6 +3,10 @@ TableView for Android
 
 横向纵向滚动的ListView使用非常简单
 
+![image](https://github.com/ngLiaXL/TableView/blob/master/TableView.gif)   
+
+
+
 ## 1、布局文件增加TableView
 
 ~~~
